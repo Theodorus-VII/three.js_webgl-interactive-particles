@@ -35,6 +35,7 @@ const canvas = document.querySelector("canvas.webgl");
 
 // Raycaster: Look it up
 const raycaster = new THREE.Raycaster();
+raycaster.params.Points.threshold = 0.4;
 const pointer = new THREE.Vector2();
 
 // Constants for the canvas area dimensions.
